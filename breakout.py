@@ -5,6 +5,8 @@
  Simpson College Computer Science
  http://programarcadegames.com/
  http://simpson.edu/computer-science/
+
+ Modified to use head tracking by John McCollum
 """
  
 # --- Import libraries used for this program
