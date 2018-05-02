@@ -184,6 +184,7 @@ class Player(pygame.sprite.Sprite):
             # Map 320 * 480 > 800 * 600, with a wee bit of added sensitivity
             x_adjusted = int((x / cap_width) * screen_width * self.sensitivity)
 
+            # Cuts down on paddle shaking (due to facial recognition jumping around a little)
             if (abs(x_adjusted - self.rect.x)) < 3:
                 x_adjusted = self.rect.x
 
