@@ -197,10 +197,9 @@ class Player(pygame.sprite.Sprite):
  
     def update(self):
         """ Update the player position. """
-        # Get where the mouse is
         pos = self.capture_face_position()
         
-        # Set the left side of the player bar to the mouse position
+        # Set the left side of the player bar to the top left of the user's face
         self.rect.x = pos[0]
         # Make sure we don't push the player paddle
         # off the right side of the screen
